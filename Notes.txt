@@ -1,0 +1,19 @@
+FE- Browser
+	HTML- Structure
+	CSS - Appearance - UI
+	JS  - Execution  - UX
+	Bootstrap- Responsiveness -framework
+	Jquery,ES6,AJAX,typescript -Libraries
+	ReactJS - framework of front-End
+
+BE- NodeJS,C/C++,Java,Python,C#,Rust,Golang
+DB- SQL,NoSQL
+
+
+		   HTML- Structure  
+
+CSS - Appearance - UI	   JS-Execution/Experience-UX
+
+
+
+
