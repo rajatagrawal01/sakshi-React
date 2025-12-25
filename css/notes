@@ -4,7 +4,20 @@ style property
 property value
 
 Browser's Priority
-Inline>Internal>External
+Inline CSS>Internal CSS>External CSS
 
 Dev
-External>Internal>Inline
+External CSS>Internal CSS>Inline
+
+
+*-Global Selector -RGPV
+Element Selector - College
+.classSelector - Class
+#idSelector- Roll no.
+
+
+Browser's Priority
+Id>class>Element>Global
+
+Dev's Priority
+Global>Element>Class>id

@@ -1,0 +1,27 @@
+/* 
+
+*{
+    color: red;
+} 
+
+*/
+
+h1{
+    color: blue;
+}
+
+.one{
+    color:red;
+    background-color: yellow;
+}
+.two{
+    color: yellow;
+}
+
+.three{
+    font-size: 50px;
+}
+
+#fourth{
+    color:green;
+}
