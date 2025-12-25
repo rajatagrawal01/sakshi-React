@@ -1,0 +1,10 @@
+Style Definition
+Element selection
+style property
+property value
+
+Browser's Priority
+Inline>Internal>External
+
+Dev
+External>Internal>Inline
