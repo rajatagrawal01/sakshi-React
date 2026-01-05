@@ -21,3 +21,24 @@ Id>class>Element>Global
 
 Dev's Priority
 Global>Element>Class>id
+
+
+
+Dimensions: px,%,vw
+
+Color:4 
+
+1-color name
+2-rgb(red,green,blue) - range(0-255) - 256,256,256- 256*256*256
+3-rgba(red,green,blue,alpha)- alpha - opacity/transperency (0-1)
+4-hsl(hue, saturation, lightness)
+5-hsl(hue, saturation, lightness,alpha)
+6-3-digit hex- #rgb - 16*16*16
+7-6-digit hex- #rrggbb - 256*256*256
+
+
+#FFF
+
+
+0-F
+0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f

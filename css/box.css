@@ -1,8 +1,8 @@
 .box1{
-    background-color:rgb(130, 117, 0);
+    background-color:#FFF;
     width: 50%;
     height: 300px;
-    border: 5px solid black;
+    border: 5px solid #c1c1c1;
 }
 
 .box2{
@@ -10,10 +10,10 @@
     width: 50%;
     height: 50%;
     border: 3px double black;
-
 }
 
 /* 
-    border: width type color;
+    border: thickness type color;
     solid,dotted,dashed,ridge
 */
+
