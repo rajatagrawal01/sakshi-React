@@ -1,0 +1,69 @@
+h1{
+    text-align: justify;
+    /* text-decoration:underline;
+    text-decoration-color:yellow;
+    text-decoration-thickness: 5px;
+    text-decoration-style: wavy; */
+
+    text-transform: lowercase;
+
+    text-indent: 5%;
+    letter-spacing:2px;
+    word-spacing: 50px;
+    line-height: 200px;
+
+    text-shadow: 10px 2px yellow;
+}
+
+/* 
+
+All Text Properties:
+1-Text Color-
+    color: value;
+
+2-Text Alignment-
+    text-align: value; (left, right, center, justify)
+    text-align-last: value; (left, right, center, justify)
+    text-justify: value; (none, inter-word, inter-character)
+    vertical-align: value; (baseline, sub, super, top, text-top, middle, bottom, text-bottom)
+    direction: value; (ltr, rtl)
+    unicode-bidi: value; (normal, embed, isolate, plaintext, bidi-override)
+
+3-Text Decoration-
+    text-decoration: value; (none, underline, overline, line-through)
+    text-decoration:line color style thickness; (underline,red, wavy, 5px)
+    text-decoration-color: value; (color)
+    text-decoration-style: value; (solid, double, dotted, dashed, wavy)
+    text-decoration-thickness: value; (auto, length)
+    text-decoration-line: value; (none, underline, overline, line-through)
+    text-decoration-skip: value; (objects, spaces, ink)
+
+4-Text Transform-
+    text-transform: value; (none, capitalize, uppercase, lowercase)
+    text-indent: value; (length, percentage)
+    letter-spacing: value; (length, normal)
+    word-spacing: value; (length, normal)
+    line-height: value; (number, length, percentage)
+    white-space: value; (normal, nowrap, pre, pre-wrap, pre-line)
+    text-shadow: value; (h-shadow v-shadow blur color)
+
+5-Text Overflow-
+    text-overflow: value; (clip, ellipsis)
+    overflow-wrap: value; (normal, break-word)
+    word-break: value; (normal, break-all, keep-all)
+    overflow: value; (visible, hidden, scroll, auto)
+    word-wrap: value; (normal, break-word)
+
+6-Text Emphasis-
+    text-emphasis: value; (none, filled, open)
+    text-emphasis-color: value; (color)
+    text-emphasis-style: value; (none, filled, open)
+    text-emphasis-position: value; (over right, under left, over right, under right)
+    text-emphasis-mark: value; (none, filled, open)
+    text-emphasis-scheme: value; (none, filled, open)
+
+7-Text Shadow-
+    text-shadow: value; (h-shadow v-shadow blur color)
+
+*/
+    

@@ -1,0 +1,58 @@
+.box1{
+    width: 600px;
+    height: 100px;
+    background-color: lightblue;
+    border: 2px solid black;
+    margin: 2px;
+    
+}
+.box2{
+    width: 600px;
+    height: 100px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    margin: 2px;
+    position: relative;
+    /* position: sticky; */
+    /* top: 100px; */
+    /* left: 100px; */
+    z-index: 1; /* Ensures this box stays on top of others when scrolling */
+
+}
+.boxA{
+    width: 300px;
+    height: 50px;
+    background-color: lightpink;
+    border: 2px solid black;
+    margin: 2px;
+    position: absolute;
+    top:10px;
+    left: 20px;
+
+}
+.boxAB{
+    width: 100px;
+    height: 20px;
+    background-color: lightyellow;
+    border: 2px solid black;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.box3{
+    width: 600px;
+    height: 100px;
+    background-color: lightcoral;
+    border: 2px solid black;
+    margin: 2px;
+    /* position:sticky; */
+
+}
+.box4{
+    width: 600px;
+    height: 100px;
+    background-color: lightgoldenrodyellow;
+    border: 2px solid black;
+    margin: 2px;
+
+}

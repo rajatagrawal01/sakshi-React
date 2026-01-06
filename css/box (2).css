@@ -1,0 +1,40 @@
+.box-size{
+    width: 180px;
+    height: 180px;
+    /* margin-top: 200px; */
+    /* margin-bottom: 200px; */
+    /* margin-left: 200px; */
+    /* margin-right: 200px; */
+    margin: 200px;
+    padding: 50px;
+    float: left;
+}
+.box-border{
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: black; */
+    border: 10px solid black;
+    /* border-right-color: black; */
+    
+    /* border-right: 10px solid black;
+    border-left: 10px dashed black;
+    border-top: 10px dotted black;
+    border-bottom: 10px double black; */
+
+    /* border-radius: 100px; */
+}
+.box-background{
+    background-color: hsl(217, 73%, 88%);
+    background-image: url("assets/image.jpg");
+    
+    /* Default image size */
+    /* background-size: auto; */
+    
+    /* Increase size keeping aspect ratio same, stops if one of the border touches */
+    background-size: 100% 100%; 
+
+    /* Increase size keeping aspect ratio same, stops when last of the border touches image */
+    /* background-size: cover;  */
+
+    background-repeat: no-repeat;
+}
