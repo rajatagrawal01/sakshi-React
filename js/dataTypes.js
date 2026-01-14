@@ -6,6 +6,7 @@ var c="Hello";
 var d=true;
 var e=null;
 var f;
+var g=NaN;
 
 console.log("type of : a :",typeof(a));
 console.log("type of : b :",typeof(b));

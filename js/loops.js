@@ -1,4 +1,4 @@
-var a = 1;
+// var a = 1;
 
 // do{
 //     console.log(a);
@@ -10,7 +10,7 @@ var a = 1;
 //     a++;
 // }
 
-for (let a = 1; a <= 100; a++) {
+// for (let a = 1; a <= 100; a++) {
 //   if (a % 2 != 0) {
 //     console.log(a);
 //   }
@@ -18,7 +18,28 @@ for (let a = 1; a <= 100; a++) {
     // if(a%3==0 || a%5==0){
     //     console.log(a);
     // }
-}
+// }
 
 // while->Jabtak -> It can run forever - for not fix ending point
 // for -> ke liye-> It will run for a finite time - for fixed ending
+
+
+// for(let i=0;i<=10;i++){
+//     // if(i==4){
+//     //     break;
+//     // }
+//     if(i==4){
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+
+var a = 1;
+while(true){
+    if(a==10){
+        break;
+    }
+    console.log(a);
+    a++;
+}

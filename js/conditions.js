@@ -15,14 +15,12 @@ var age=18;
 //     console.log(a," is odd");
 // }
 
-// if(age<18){
-//     console.log("Not eligible");
-// }
-// else if(age==18){
-//     console.log("Eligible for learning");
-// }
-// else{
-//     console.log("Eligible");
-// }
-
-
+if(age<18){
+    console.log("Not eligible");
+}
+else if(age==18){
+    console.log("Eligible for learning");
+}
+else{
+    console.log("Eligible");
+}
