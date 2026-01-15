@@ -43,3 +43,14 @@
 // }
 
 // welcome("Sakshi");
+
+
+
+// function Heading(stuName="Guest"){
+//     console.log("Hello",stuName);
+// }
+
+// Heading("Ananya")
+// Heading("Sanjana")
+// Heading("Vinayak")
+// Heading();
