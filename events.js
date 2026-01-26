@@ -8,7 +8,7 @@
 //     console.log("e value",e.target.value);
 // }
 
-// btn.onclick=function (e) {
+// btn.onkeyup=function (e) {
 //     console.log("Hello sakshi");
 //     console.log(e);
     
@@ -28,7 +28,11 @@ myform.addEventListener("submit",
         var stuName=document.getElementById("stuName").value
 
         if(stuName.length<5){
-            console.log();
+            console.log("Enter greater than 5");
+        }
+        else{
+            console.log("Great");
+            
         }
     }
 )
