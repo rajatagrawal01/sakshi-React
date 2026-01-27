@@ -11,8 +11,7 @@
 // btn.onkeyup=function (e) {
 //     console.log("Hello sakshi");
 //     console.log(e);
-    
-    
+
 // }
 
 // inpt.addEventListener("keyup",
@@ -21,18 +20,18 @@
 //     }
 // )
 
-var myform= document.getElementById("demo")
-myform.addEventListener("submit",
-    function(e){
-        e.preventDefault();
-        var stuName=document.getElementById("stuName").value
+var myform = document.getElementById("demo");
+myform.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var stuName = document.getElementById("stuName").value;
+  var agree = document.getElementById("agree");
+  if (!agree.checked) {
+    alert("You must accept terms");
+  }
 
-        if(stuName.length<5){
-            console.log("Enter greater than 5");
-        }
-        else{
-            console.log("Great");
-            
-        }
-    }
-)
+  if (stuName.length < 5) {
+    console.log("Enter greater than 5");
+  } else {
+    console.log("Great");
+  }
+});
