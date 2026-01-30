@@ -106,5 +106,3 @@ arr.sort((a,b)=>a-b) // Ascending
 arr.sort((a,b)=>b-a) // Descending
 
 console.log(arr);
-
-
