@@ -4,3 +4,11 @@ node -v or --version //output node version
 
 npm -v or --version //output npm version
 npx create-react-app sakshi
+
+
+
+// Developer's POV
+app.js -> index.js -> index.html
+
+// Browser's POV
+index.html -> index.js -> app.js  --> SBI Bank

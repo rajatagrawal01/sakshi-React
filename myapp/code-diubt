@@ -1,0 +1,153 @@
+(function () {
+	const GRID_A_ID = 'grid-LineSplitting';
+	const GRID_B_ID = 'edewqclotserialstatus';
+ 
+	const DIALOG_SELECTOR =
+		'.dialog-body-content, .ux-dialog-body, .qp-rz-center';
+ 
+	let observer: MutationObserver | null = null;
+	let rafId: number | null = null;
+	let lastDialogWidth = 0;
+ 
+	function getGridA(): HTMLElement | null {
+		return document.getElementById(GRID_A_ID);
+	}
+ 
+	function getGridB(): HTMLElement | null {
+		return document.getElementById(GRID_B_ID);
+	}
+ 
+	function getDialog(grid: HTMLElement): HTMLElement | null {
+		return grid.closest(DIALOG_SELECTOR) as HTMLElement | null;
+	}
+ 
+	function dialogReady(dialog: HTMLElement): boolean {
+		const w = dialog.clientWidth;
+		const stable = w > 300 && Math.abs(w - lastDialogWidth) < 2;
+		lastDialogWidth = w;
+		return stable;
+	}
+ 
+	function isGridBVisible(): boolean {
+		const gridB = getGridB();
+		if (!gridB) return false;
+ 
+		const style = getComputedStyle(gridB);
+		return style.display !== 'none' && style.visibility !== 'hidden';
+	}
+ 
+	function applyWidths(dialog: HTMLElement): void {
+		const gridA = getGridA();
+		const gridB = getGridB();
+		if (!gridA) return;
+ 
+		const popupWidth = dialog.clientWidth - 24;
+		if (popupWidth <= 0) return;
+ 
+		const gridBVisible = isGridBVisible();
+ 
+		let widthA: number;
+		let widthB: number;
+ 
+		if (!gridBVisible) {
+ 
+			widthA = popupWidth;
+			widthB = 0;
+		} else {
+ 
+			widthA = Math.max(Math.floor(popupWidth * 0.65), 900);
+			widthB = Math.max(popupWidth - widthA, 450);
+ 
+ 
+			if (widthA + widthB > popupWidth) {
+				widthB = popupWidth - widthA;
+			}
+		}
+ 
+		setGridWidth(gridA, widthA);
+ 
+		if (gridB && gridBVisible) {
+			setGridWidth(gridB, widthB);
+		}
+	}
+ 
+ 
+	function setGridWidth(grid: HTMLElement, widthPx: number): void {
+		const width = `${widthPx}px`;
+ 
+		if (grid.style.width === width) return;
+ 
+		grid.style.width = width;
+		grid.style.maxWidth = width;
+ 
+		grid
+			.querySelectorAll<HTMLElement>(
+				'.grid-header, .grid-header-table, .grid-content-table'
+			)
+			.forEach(el => (el.style.width = width));
+	}
+ 
+	function tryApply(retries = 30): void {
+		const gridA = getGridA();
+		if (!gridA || retries <= 0) {
+			rafId = requestAnimationFrame(() => tryApply(retries - 1));
+			return;
+		}
+ 
+		const dialog = getDialog(gridA);
+		if (!dialog || !dialogReady(dialog)) {
+			rafId = requestAnimationFrame(() => tryApply(retries - 1));
+			return;
+		}
+ 
+		applyWidths(dialog);
+		startWatching(dialog);
+	}
+ 
+	function startWatching(dialog: HTMLElement): void {
+		if (observer) return;
+ 
+		observer = new MutationObserver(() => {
+			if (!dialogReady(dialog)) return;
+			applyWidths(dialog);
+		});
+ 
+		observer.observe(dialog, {
+			attributes: true,
+			childList: true,
+			subtree: true
+		});
+ 
+		window.addEventListener('resize', () => applyWidths(dialog));
+	}
+ 
+	function reset(): void {
+		observer?.disconnect();
+		observer = null;
+		lastDialogWidth = 0;
+ 
+		if (rafId !== null) {
+			cancelAnimationFrame(rafId);
+			rafId = null;
+		}
+	}
+ 
+	// Handle popup reuse (Modern UI)
+	document.addEventListener('click', () => {
+		reset();
+		requestAnimationFrame(() => tryApply());
+	});
+ 
+	window.addEventListener('beforeunload', reset);
+ 
+	tryApply();
+})();
+
+
+
+
+
+23.25
+
+floor-23
+ceil-24
