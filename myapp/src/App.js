@@ -1,13 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Box from './Components/Box'
 
 function App() {
   console.log("Hello");
   return (
     <>
-    <div className="box1">
-        <div className="box2"></div>
-    </div>
+      <Box/>
     </>
   );
 }
