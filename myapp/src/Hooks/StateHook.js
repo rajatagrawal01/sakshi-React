@@ -8,8 +8,6 @@ export default function StateHook() {
   const [heading,setHeading] = useState("");
   const [users,setUsers] = useState([])
 
-
-
   return (
     <div>
       {/* Number useState */}
