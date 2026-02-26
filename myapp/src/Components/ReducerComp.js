@@ -1,21 +1,25 @@
 import React, { useReducer } from "react";
 
 export default function ReducerComp() {
-//   const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
 const reducer =(state,action)=>{
-    console.log(state,action);
+    // console.log("State:",state,"Action",action);
     if(action.type=="Increase"){
         console.log(action.type);
         return state+1
     }
     if(action.type=="Decrease"){
-        console.log(action.type);
+        // console.log(action.type);
         return state-1
     }
 }
+
+
   const [count, dispatch] = useReducer(reducer, 0);
-//   console.log(useReducer);
+  // const [count, dispatch] = useReducer(reducerFunction, initialState);
+
+
   
   return (
     <div>

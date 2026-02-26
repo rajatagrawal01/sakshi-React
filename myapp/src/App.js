@@ -7,6 +7,8 @@ import { useState } from "react";
 import { Button } from "bootstrap";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./Components/Navbar";
+import ReducerComp from "./Components/ReducerComp";
+import AdvReducer from "./Components/AdvReducer";
 
 function App() {
   const [visibility, setVisibility] = useState(true);
@@ -20,9 +22,11 @@ function App() {
       {/* <button onClick={() => setVisibility(!visibility)}>Toggle Button</button>
 
       {visibility ? <Counter /> : ""} */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Navbar />
-      </BrowserRouter>
+      </BrowserRouter> */}
+      {/* <ReducerComp/> */}
+      <AdvReducer/>
     </>
   );
 }

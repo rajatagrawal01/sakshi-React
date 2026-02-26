@@ -1,17 +1,17 @@
-import React, { useReducer } from "react";
+import { useReducer, useState } from "react";
 
 export default function AdvReducer() {
   let initialState = {
     count: 10,
-    incr: 2,
-    decr: 2,
+    val1: 2,
+    val2: 4,
   };
 
   const reducer = (state, action) => {
     switch (action.type) {
       case "Increase":
         console.log("Increase");
-        return { ...state, count: state.count + 1 };
+        return { ...state, count: state.count + 1, val1: state.val1 + 2 };
       case "Decrease":
         console.log("Decrease");
         return { ...state, count: state.count - 1 };

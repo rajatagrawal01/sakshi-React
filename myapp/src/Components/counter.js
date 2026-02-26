@@ -5,7 +5,6 @@ function Counter() {
   const a=useRef(0);
 
   useEffect(()=>{
-    
     console.log("Component mounted");
     return function(){
       console.log("Component unmounted");
