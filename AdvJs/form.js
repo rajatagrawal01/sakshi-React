@@ -10,22 +10,26 @@ password.addEventListener("keyup",function(){
     let value=password.value;
     // console.log(value);
 
-    if(value.length<5){
+    if(value.length<3){
         message.innerText="Enter Greater than 5"
         message.style.color="red"
     }
-    // else if(!value.match(/[0-9]/)){
-    //     message.innerText="Enter a number"
-    //     message.style.color="red"
-    // }
-    // else if(!value.match(/[A-Z]/)){
-    //     message.innerText="Enter a Capital letter"
-    //     message.style.color="red"
-    // }
-    // else if(!value.match(/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/)){
-    //     message.innerText="Enter a Special character"
-    //     message.style.color="red"
-    // }
+    else if(!value.match(/[0-9]/)){
+        message.innerText="Enter a number"
+        message.style.color="red"
+    }
+    else if(!value.match(/[A-Z]/)){
+        message.innerText="Enter a Capital letter"
+        message.style.color="red"
+    }
+    else if(!value.match(/[a-z]/)){
+        message.innerText="Enter a small letter"
+        message.style.color="red"
+    }
+    else if(!value.match(/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/)){
+        message.innerText="Enter a Special character"
+        message.style.color="red"
+    }
 
     else if(!value.match(/[A-Z]/) || !value.match(/[0-9]/) || !value.match(/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/)){
         message.innerText="Weak Password"

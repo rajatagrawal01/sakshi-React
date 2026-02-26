@@ -4,7 +4,6 @@
 //     return a+b;
 // }
 
-
 // ======================With parameter=============================
 //const add= (a,b)=> a+b //for single line return
 // const add = (a, b) => {
@@ -14,7 +13,6 @@
 // console.log(add(2, 3));
 
 // 
-
 
 // ======================Single parameter=============================
 
@@ -102,7 +100,7 @@ var arr=[1,2,3,5,4,8,7,234,123,34534,121]
 // console.log(fruits.includes("banana"));
 
 // ======================sort()=============================
-arr.sort((a,b)=>a-b) // Ascending
-arr.sort((a,b)=>b-a) // Descending
+// arr.sort((a,b)=>a-b) // Ascending
+// arr.sort((a,b)=>b-a) // Descending
 
-console.log(arr);
+// console.log(arr);

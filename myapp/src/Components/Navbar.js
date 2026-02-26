@@ -2,6 +2,7 @@ import React from 'react'
 import {Routes,Route,Link} from 'react-router-dom'
 import Home from "./Home"
 import Users from "./Users"
+import UserDetails from "./UserDetails"
 
 export default function Navbar() {
   return (
@@ -14,6 +15,7 @@ export default function Navbar() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/users' element={<Users/>}/>
+        <Route path='/users/:id' element={<UserDetails/>}/>
       </Routes>
     </div>
   )

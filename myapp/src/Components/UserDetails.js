@@ -6,7 +6,7 @@ export default function UserDetails() {
     return (
     <div>
         <h2>User Details</h2>
-        <p>User deyails : {id}</p>
+        <p>User details : {id}</p>
     </div>
   )
 }
